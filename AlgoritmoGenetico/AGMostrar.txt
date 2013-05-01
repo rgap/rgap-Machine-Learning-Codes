@@ -1,0 +1,20 @@
+Atributos AG
+
+numElite = 3
+numCopiasElite = 1
+probCrossOver = 0.5
+probMutacion = 0.1
+maxMutacion = 0.01
+
+Atributos Poblacion
+
+tamPoblacion = 134529752
+longitudCromosoma = 134545416
+
+Indicadores
+
+peorFitness = -2.49676e-39
+promedioFitness = 0
+mejorFitness = -5.72156e-39
+totalFitness = -4.10224e-39
+mejorCromosoma = 

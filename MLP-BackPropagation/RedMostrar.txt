@@ -1,0 +1,228 @@
+numCapas = 3
+factorAprendizaje = 0.5
+momentum = 0.3
+
+#######################  numCapa = 0 ####################### 
+
+tipoCapa = 0
+numNeuronas = 5
+numNeuronasTotal = 6
+-------------------------------------------- 
+numNeurona = 0
+numCapa = 0
+es bias = 0
+delta = 0
+--------------- 
+resPropag = 0
+activacion = 0
+salida = 120
+
+-------------------------------------------- 
+-------------------------------------------- 
+numNeurona = 1
+numCapa = 0
+es bias = 0
+delta = 0
+--------------- 
+resPropag = 0
+activacion = 0
+salida = 110
+
+-------------------------------------------- 
+-------------------------------------------- 
+numNeurona = 2
+numCapa = 0
+es bias = 0
+delta = 0
+--------------- 
+resPropag = 0
+activacion = 0
+salida = 1
+
+-------------------------------------------- 
+-------------------------------------------- 
+numNeurona = 3
+numCapa = 0
+es bias = 0
+delta = 0
+--------------- 
+resPropag = 0
+activacion = 0
+salida = 10
+
+-------------------------------------------- 
+-------------------------------------------- 
+numNeurona = 4
+numCapa = 0
+es bias = 0
+delta = 0
+--------------- 
+resPropag = 0
+activacion = 0
+salida = 10
+
+-------------------------------------------- 
+-------------------------------------------- 
+numNeurona = 5
+numCapa = 0
+es bias = 1
+delta = 0
+--------------- 
+resPropag = 0
+activacion = 0
+salida = 1
+
+-------------------------------------------- 
+
+
+#######################  numCapa = 1 ####################### 
+
+Conexiones entre Capas 
+Capa origen: 0 ->  Capa destino: 1
+
+tipoCapa = 1
+numNeuronas = 6
+numNeuronasTotal = 7
+-------------------------------------------- 
+numNeurona = 0
+numCapa = 1
+es bias = 0
+delta = -2.42429e-20
+--------------- 
+resPropag = 36.2862
+activacion = 1
+salida = 1
+
+Conexion #0 : W(0,0) = 0.340188
+Conexion #1 : W(1,0) = -0.105617
+Conexion #2 : W(2,0) = 0.283099
+Conexion #3 : W(3,0) = 0.29844
+Conexion #4 : W(4,0) = 0.411647
+Conexion #5 : W(5,0) = -0.302449
+-------------------------------------------- 
+-------------------------------------------- 
+numNeurona = 1
+numCapa = 1
+es bias = 0
+delta = 3.26281e-09
+--------------- 
+resPropag = 12.1605
+activacion = 0.999995
+salida = 0.999995
+
+Conexion #0 : W(0,1) = -0.154998
+Conexion #1 : W(1,1) = 0.282555
+Conexion #2 : W(2,1) = -0.233329
+Conexion #3 : W(3,1) = 0.018671
+Conexion #4 : W(4,1) = -0.0402713
+Conexion #5 : W(5,1) = 0.128602
+-------------------------------------------- 
+-------------------------------------------- 
+numNeurona = 2
+numCapa = 1
+es bias = 0
+delta = -3.20166e-13
+--------------- 
+resPropag = -21.4648
+activacion = 4.76384e-10
+salida = 4.76384e-10
+
+Conexion #0 : W(0,2) = -0.186777
+Conexion #1 : W(1,2) = -0.0467545
+Conexion #2 : W(2,2) = 0.450081
+Conexion #3 : W(3,2) = 0.411039
+Conexion #4 : W(4,2) = 0.131415
+Conexion #5 : W(5,2) = 0.216867
+-------------------------------------------- 
+-------------------------------------------- 
+numNeurona = 3
+numCapa = 1
+es bias = 0
+delta = 2.77864e-21
+--------------- 
+resPropag = -37.6195
+activacion = 4.5928e-17
+salida = 4.5928e-17
+
+Conexion #0 : W(0,3) = -0.358397
+Conexion #1 : W(1,3) = 0.106969
+Conexion #2 : W(2,3) = -0.483699
+Conexion #3 : W(3,3) = -0.257113
+Conexion #4 : W(4,3) = -0.362768
+Conexion #5 : W(5,3) = 0.304177
+-------------------------------------------- 
+-------------------------------------------- 
+numNeurona = 4
+numCapa = 1
+es bias = 0
+delta = 2.16664e-28
+--------------- 
+resPropag = -51.6692
+activacion = 3.63356e-23
+salida = 3.63356e-23
+
+Conexion #0 : W(0,4) = -0.343321
+Conexion #1 : W(1,4) = -0.0990556
+Conexion #2 : W(2,4) = -0.37021
+Conexion #3 : W(3,4) = -0.391191
+Conexion #4 : W(4,4) = 0.498925
+Conexion #5 : W(5,4) = -0.281743
+-------------------------------------------- 
+-------------------------------------------- 
+numNeurona = 5
+numCapa = 1
+es bias = 0
+delta = 5.86985e-16
+--------------- 
+resPropag = 27.5625
+activacion = 1
+salida = 1
+
+Conexion #0 : W(0,5) = -0.0555721
+Conexion #1 : W(1,5) = 0.332727
+Conexion #2 : W(2,5) = 0.0203517
+Conexion #3 : W(3,5) = -0.281784
+Conexion #4 : W(4,5) = 0.0406096
+Conexion #5 : W(5,5) = 0.0226327
+-------------------------------------------- 
+-------------------------------------------- 
+numNeurona = 6
+numCapa = 1
+es bias = 1
+delta = -0
+--------------- 
+resPropag = 0
+activacion = 0
+salida = 1
+
+-------------------------------------------- 
+
+
+#######################  numCapa = 2 ####################### 
+
+Conexiones entre Capas 
+Capa origen: 1 ->  Capa destino: 2
+
+tipoCapa = 2
+numNeuronas = 1
+numNeuronasTotal = 1
+-------------------------------------------- 
+numNeurona = 0
+numCapa = 2
+es bias = 0
+delta = 0.000222953
+--------------- 
+resPropag = 4.18154
+activacion = 0.984955
+salida = 0.984955
+
+Conexion #0 : W(0,0) = -0.489701
+Conexion #1 : W(1,0) = 2.79651
+Conexion #2 : W(2,0) = -3.01442
+Conexion #3 : W(3,0) = 0.271358
+Conexion #4 : W(4,0) = 0.026745
+Conexion #5 : W(5,0) = 2.45842
+Conexion #6 : W(6,0) = -0.583055
+-------------------------------------------- 
+
+
