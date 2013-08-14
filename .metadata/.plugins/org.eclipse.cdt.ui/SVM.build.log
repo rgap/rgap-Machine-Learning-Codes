@@ -1,0 +1,14 @@
+
+**** Build of configuration Debug for project SVM ****
+
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o"src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: SVM
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o"SVM"  ./src/main.o   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Finished building target: SVM
+ 

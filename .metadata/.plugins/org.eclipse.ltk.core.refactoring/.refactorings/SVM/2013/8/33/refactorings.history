@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;SVM/src/hmm.h&apos; to &apos;svm.h&apos;" description="Rename resource &apos;hmm.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/hmm.h" name="svm.h" stamp="1376351794181" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;SVM/src/hmm.cpp&apos; to &apos;svm.cpp&apos;" description="Rename resource &apos;hmm.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/hmm.cpp" name="svm.cpp" stamp="1376351800851" updateReferences="true"/>
+</session>

@@ -1,0 +1,16 @@
+#include "svm.h"
+
+#include <opencv2/ml/ml.hpp>
+#include <iostream>
+
+using namespace std;
+using namespace cv;
+
+
+// Data for visual representation
+int width = 512, height = 512;
+Mat image = Mat::zeros(height, width, CV_8UC3);
+
+// Set up training data
+float labels[4] = {1.0, -1.0, -1.0, -1.0};
+Mat labelsMat(4, 1, CV_32FC1, labels);
