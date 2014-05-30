@@ -1,0 +1,13 @@
+1724
+4
+acc : 383
+unacc : 1206
+good : 67
+vgood : 64
+6
+A : high, med, vhigh, low, 
+B : high, med, vhigh, low, 
+C : 5more, 3, 2, 4, 
+D : 2, 4, more, 
+E : small, med, big, 
+F : high, med, low, 
