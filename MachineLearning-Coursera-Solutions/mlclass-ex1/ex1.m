@@ -1,37 +1,14 @@
 %% Machine Learning Online Class - Exercise 1: Linear Regression
-
-%  Instructions
-%  ------------
-% 
-%  This file contains code that helps you get started on the
-%  linear exercise. You will need to complete the following functions 
-%  in this exericse:
-%
-%     warmUpExercise.m
-%     plotData.m
-%     gradientDescent.m
-%     computeCost.m
-%     gradientDescentMulti.m
-%     computeCostMulti.m
-%     featureNormalize.m
-%     normalEqn.m
-%
-%  For this exercise, you will not need to change any code in this file,
-%  or any other files other than those mentioned above.
-%
-% x refers to the population size in 10,000s
-% y refers to the profit in $10,000s
+% x = population size in 10,000s
+% y = profit in $10,000s
 %
 
-%% Initialization
 clear ; close all; clc
 
 %% ==================== Part 1: Basic Function ====================
-% Complete warmUpExercise.m 
 fprintf('Running warmUpExercise ... \n');
 fprintf('5x5 Identity Matrix: \n');
 warmUpExercise()
-
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 
@@ -43,7 +20,6 @@ X = data(:, 1); y = data(:, 2);
 m = length(y); % number of training examples
 
 % Plot Data
-% Note: You have to complete the code in plotData.m
 plotData(X, y);
 
 fprintf('Program paused. Press enter to continue.\n');
@@ -75,6 +51,9 @@ plot(X(:,2), X*theta, '-')
 legend('Training data', 'Linear regression')
 hold off % don't overlay any more plots on this figure
 
+
+%% =================== Predicting values ===================
+
 % Predict values for population sizes of 35,000 and 70,000
 predict1 = [1, 3.5] *theta;
 fprintf('For population = 35,000, we predict a profit of %f\n',...
@@ -104,19 +83,18 @@ for i = 1:length(theta0_vals)
     end
 end
 
-
-% Because of the way meshgrids work in the surf command, we need to 
-% transpose J_vals before calling surf, or else the axes will be flipped
-J_vals = J_vals';
-% Surface plot
+J_vals = J_vals'; % transpose to use "surf"
+%%%%%%%%%%%%%%%%%%%%%% Surface plot
 figure;
 surf(theta0_vals, theta1_vals, J_vals)
+title('Surface Plot');
 xlabel('\theta_0'); ylabel('\theta_1');
 
-% Contour plot
+%%%%%%%%%%%%%%%%%%%%%% Contour plot
 figure;
 % Plot J_vals as 15 contours spaced logarithmically between 0.01 and 100
 contour(theta0_vals, theta1_vals, J_vals, logspace(-2, 3, 20))
+title('Contour Plot');
 xlabel('\theta_0'); ylabel('\theta_1');
 hold on;
 plot(theta(1), theta(2), 'rx', 'MarkerSize', 10, 'LineWidth', 2);

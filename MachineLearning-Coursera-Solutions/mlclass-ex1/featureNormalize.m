@@ -29,9 +29,9 @@ sigma = zeros(1, size(X, 2));
 
 mu = mean(X);
 sigma = std(X);
-n = size(X,1);
+m = size(X,1); % # of training examples
 
-X_norm = (X - ones(n, 1) * mu) ./ (ones(n, 1) * sigma);
+X_norm = (X - ones(m, 1) * mu) ./ (ones(m, 1) * sigma);
 
 
 
