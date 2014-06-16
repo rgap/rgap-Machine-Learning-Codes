@@ -105,5 +105,5 @@ class NaiveBayesClassifier():
                 ntests += 1
                 print "------------------------\n"
 
-        print "Exactitud = " + str((sumResult / ntests))
+        print "Accuracy = " + str((sumResult / ntests))
         print "Error = " + str((1 - sumResult / ntests))

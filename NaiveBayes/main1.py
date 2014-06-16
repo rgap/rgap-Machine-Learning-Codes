@@ -12,7 +12,11 @@ fileParser = FileParser()
 fileParser.buildFileDescription("car.data", "db_car.txt")
 fileParser.parseFileDescription("db_car.txt")
 fileParser.parseCVSPatterns("car.data")
-#fileParser.printPatterns()
+fileParser.parseCVS2Numeric("car_numeric.data")
+fileParser.convertTestFileNumeric("car-prueba.data", "car-prueba_numeric.data")
+
+
+
 
 classifier = NaiveBayesClassifier(fileParser)
 

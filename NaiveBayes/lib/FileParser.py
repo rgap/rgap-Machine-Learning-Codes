@@ -98,7 +98,6 @@ class FileParser():
 				
 
 	def parseCVSPatterns(self, filePatterns):
-
 		with open(filePatterns, 'r') as f:
 
 		    for line in f.readlines():
@@ -112,6 +111,26 @@ class FileParser():
 
 		    	value = self.class_value[chunks[self.N]]
 		    	self.label.append(value)
+
+	def parseCVS2Numeric(self, filePatterns):
+		with open(filePatterns, 'w') as f:
+			for i in range(self.ninstances):
+				line = ', '.join(str(x) for x in self.fvector[i]) + ', ' + str(self.label[i])
+				f.write(line + '\n')
+
+	def convertTestFileNumeric(self, fileTest, fileNumeric):
+		fT = open(fileTest, "r")
+		fN = open(fileNumeric, 'w')
+		for line in fT.readlines():
+			testData = line.replace(" ", "").rstrip().split(',')
+			for i, data in zip(range(self.N),testData):
+				feature_value = self.feature_value[i][str(data)]
+				fN.write(str(feature_value) + ', ')
+			fN.write(str(self.class_value[testData[-1]]))
+			fN.write('\n')
+		fT.close()
+		fN.close()
+
 
 	def printDBData(self):
 		print "---------- FILE INFO"
