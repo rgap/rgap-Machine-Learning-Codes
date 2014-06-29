@@ -1,0 +1,63 @@
+Resultados conseguidos con libsvm con 10 fold cross-validation
+===================================
+
+gamma = 0.3
+Cost (C) = 0.1
+
+Correctly Classified Instances        1296               75.174  %
+Incorrectly Classified Instances       428               24.826  %
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+  122  262    0    0 |    a = 0
+   33 1174    0    0 |    b = 1
+    5   63    0    0 |    c = 2
+   31   34    0    0 |    d = 3
+
+-----------------------------------
+
+gamma = 0.3
+Cost (C) = 1.0
+
+Correctly Classified Instances        1492               86.5429 %
+Incorrectly Classified Instances       232               13.4571 %
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+  348   33    0    3 |    a = 0
+   81 1126    0    0 |    b = 1
+   67    1    0    0 |    c = 2
+   47    0    0   18 |    d = 3
+
+-----------------------------------
+
+
+
+
+-----------------------------------
+
+gamma = 0.3
+Cost (C) = 10.0
+
+Correctly Classified Instances        1678               97.3318 %
+Incorrectly Classified Instances        46                2.6682 %
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.964     0.016      0.944     0.964     0.954      0.974    0
+                 0.991     0.01       0.996     0.991     0.993      0.991    1
+                 0.853     0.008      0.806     0.853     0.829      0.922    2
+                 0.831     0.003      0.915     0.831     0.871      0.914    3
+Weighted Avg.    0.973     0.011      0.974     0.973     0.973      0.981
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+  370    5    6    3 |    a = 0
+    8 1196    3    0 |    b = 1
+    8    0   58    2 |    c = 2
+    6    0    5   54 |    d = 3
+
