@@ -30,7 +30,7 @@ H = 0;
 if strcmp(func2str(kernelFunction), 'linearKernel')
     K = X*X';
 elseif strfind(func2str(kernelFunction), 'gaussianKernel')
-   
+    X2 = sum(X.^2, 2);
     K = bsxfun(@plus, X2, bsxfun(@plus, X2', - 2 * (X * X')));
     K = kernelFunction(1, 0) .^ K;
 else

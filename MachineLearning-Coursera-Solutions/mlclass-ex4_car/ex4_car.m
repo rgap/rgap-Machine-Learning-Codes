@@ -32,7 +32,6 @@ initial_nn_params = [initial_Theta1(:) ; initial_Theta2(:)];
 %% =================== Part 8: Training NN ===================
 
 
-% TRAINING WITH  ----- LAMBDA = 1, MAXITER = 50
 fprintf('\nTraining Neural Network... \n')
 
 % cost = 0.627255

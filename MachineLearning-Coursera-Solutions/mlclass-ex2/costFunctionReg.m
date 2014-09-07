@@ -9,30 +9,13 @@ m = length(y); % number of training examples
 
 % You need to return the following variables correctly 
 J = 0;
-
 grad = zeros(size(theta));
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-h_theta = sigmoid(X * theta);
-
-fungrad = (-y)' * log(h_theta) - (1 - y)' * log(1 - h_theta);
-
-regularization = (lambda / (2*m)) .* sum(theta.^2);
-
-J = ((1/m) .* sum(fungrad)) + regularization;
-
-%%%%%%%%%%%%%%%%%%%%%%%% gradient
-
-n = length(theta);
-
-
-grad(1) = 1./m * (X'(1,:) * (h_theta - y));
-
-for j=2:n
-	regularization = 1./m .* lambda .* theta(j,1);
-	grad(j) = 1./m * (X'(j,:) * (h_theta - y))   +   regularization;
-end
+hX = sigmoid((theta' * X')');
+J = 1 / m * sum((-y' * log(hX)) - ((1 - y') * log(1 - hX)));
+J = J + lambda / (2 * m) * sum(theta(2:end) .^ 2);
+grad = 1 / m * ((hX - y)' * X);
+grad(2:end) = grad(2:end)' + lambda / m * theta(2:end);
 
 % =============================================================
 
