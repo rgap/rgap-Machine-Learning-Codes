@@ -1,33 +1,16 @@
-%% Machine Learning Online Class
-%  Exercise 8 | Anomaly Detection and Collaborative Filtering
-%
-%  Instructions
-%  ------------
-%
-%  This file contains code that helps you get started on the
-%  exercise. You will need to complete the following functions:
-%
-%     estimateGaussian.m
-%     selectThreshold.m
-%     cofiCostFunc.m
-%
-%  For this exercise, you will not need to change any code in this file,
-%  or any other files other than those mentioned above.
-%
-
 %% =============== Part 1: Loading movie ratings dataset ================
-%  You will start by loading the movie ratings dataset to understand the
-%  structure of the data.
+%  Loading the movie ratings dataset
+% n_u = 943 users, n_m = 1682 movies
 %  
 fprintf('Loading movie ratings dataset.\n\n');
 
 %  Load data
 load ('ex8_movies.mat');
 
-%  Y is a 1682x943 matrix, containing ratings (1-5) of 1682 movies on 
+%  Y = 1682x943 matrix containing ratings (1-5) of 1682 movies on 
 %  943 users
 %
-%  R is a 1682x943 matrix, where R(i,j) = 1 if and only if user j gave a
+%  R = 1682x943 matrix, where R(i,j) = 1 if and only if user j gave a
 %  rating to movie i
 
 %  From the matrix, we can compute statistics like average rating.
@@ -211,10 +194,6 @@ fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
 
 %% ================== Part 8: Recommendation for you ====================
-%  After training the model, you can now make recommendations by computing
-%  the predictions matrix.
-%
-
 p = X * Theta';
 my_predictions = p(:,1) + Ymean;
 

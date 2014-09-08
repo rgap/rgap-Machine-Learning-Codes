@@ -1,4 +1,4 @@
-function visualizeFit(X, mu, sigma2)
+function visualizeFit(X, mu, sigma2) % ANOMALY DETECTION
 %VISUALIZEFIT Visualize the dataset and its estimated distribution.
 %   VISUALIZEFIT(X, p, mu, sigma2) This visualization shows you the 
 %   probability density function of the Gaussian distribution. Each example
