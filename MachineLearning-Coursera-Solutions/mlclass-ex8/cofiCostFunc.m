@@ -41,26 +41,12 @@ Theta_grad = zeros(size(Theta));
 %
 
 %%%%%%%%%%%% COST FUNCTION
-temp = ((X * Theta') - Y); % difference
-J = 1/2 * sum(sum(R .* (temp.^2)));
-
-% Regularization
-reg_X = lambda * X;
-reg_theta = lambda * Theta;
-
-
-%%%%%%%%%%%% Regularized CF gradients
-
-X_grad = ((X * Theta' - Y) .* R) * Theta;
-X_grad = X_grad + reg_X;
-theta_grad = ((X * Theta' - Y) .* R)' * X;
-theta_grad = theta_grad + reg_theta;
-
-
-%%%%%%%%%%%% REGULARIZED COST FUNCTION
-reg_J = (lambda/2) * (sum(sum(Theta.^2)) + sum(sum(X.^2))); 
-J = J + reg_J;
-
+D = (X*Theta'-Y) .* R;
+J = 1/2 * sum(sum(D.^2)) + lambda/2 * sum(sum(Theta.^2)) ...
+                         + lambda/2 * sum(sum(X.^2));
+						 
+X_grad = D * Theta + lambda * X;
+Theta_grad = D' * X + lambda * Theta;
 
 % =============================================================
 
